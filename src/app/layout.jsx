@@ -1,9 +1,7 @@
-import Footer from '../app/components/footer'
-import NavBar from '../app/components/navbar'
+import Footer from './components/Footer'
+import NavBar from './components/Navbar'
 import './globals.css'
 import { Montserrat, Lobster } from 'next/font/google'
-
-
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' })
 const lobster = Lobster({ subsets: ['latin'], weight: '400', variable: '--font-lob' })
 

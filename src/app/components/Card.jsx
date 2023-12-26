@@ -5,7 +5,7 @@ import { faHeart, faShareSquare, faShoppingCart, faStar } from "@fortawesome/fre
 import { motion } from "framer-motion"
 import { useState } from "react";
 import Link from "next/link";
-import Rating from "./rating"; // Import your Rating component
+import Rating from "./Rating"; // Import your Rating component
 
   export default function Card({ preco, link, title, shortdescription, ratings, className = "" }) {
   

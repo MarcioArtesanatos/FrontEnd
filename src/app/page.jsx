@@ -2,14 +2,14 @@ import bgCrianca from "../../public/bgCrianca.jpg"
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCreditCard, faShieldAlt, faTruckFast } from '@fortawesome/free-solid-svg-icons';
-import Blog from '../app/components/blog';
-import Testimonials from './components/testimonials';
+import Blog from './components/Blog';
+import Testimonials from './components/Testimonials';
 import Image from 'next/image';
 import danila from '../../public/danila.jpg';
 import leonardo from '../../public/leonardo.jpg';
 import tiago from '../../public/tiago.jpg';
 import modelo from '../../public/modelo.jpg';
-import Produto from "./components/product";
+import Produto from "./components/Product";
 
 const CardIdade = ({ idade, diaMes, link }) => {
   return (

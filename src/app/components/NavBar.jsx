@@ -4,9 +4,8 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import logo from "../../../public/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import NavBarMobile from "./mobile-navbar";
+import NavBarMobile from "./MobileNavbar";
 import { faSearch, faShoppingCart, faUser, faUserAlt, faUserAstronaut, faUserCircle, faUserCog } from "@fortawesome/free-solid-svg-icons";
 
 const CustomLink = ({ href, title, className = "" }) => {

@@ -2,7 +2,7 @@
 import elicoptero from "/public/danila.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import CarrosselCompra from '../../components/buy-carousel';
+import CarrosselCompra from '../../components/BuyCarousel';
 import { useState } from 'react';
 import Card from '../../components/Card';
 
