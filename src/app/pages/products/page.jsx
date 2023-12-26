@@ -1,6 +1,6 @@
 import Image from "next/image";
 import header from '/public/header_produtos.jpg';
-import Produto from "/src/app/components/product";
+import Produto from "/src/app/components/Products";
 
 export default function Produtos() {
     return (
