@@ -8,4 +8,4 @@ export default function Testimonials({ text, foto, name, cidade }) {
             <h2 className="font-bold">{name} - {cidade}</h2>
         </div>
     )
-}
+} 

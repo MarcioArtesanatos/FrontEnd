@@ -41,7 +41,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
                 ratings={item.avaliacao}
                 preco={item.valor}
                 link={primeiroLink}
-                href=""
+                href="/"
               />
             );
           }
