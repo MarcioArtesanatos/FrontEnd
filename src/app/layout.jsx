@@ -1,5 +1,5 @@
 import Footer from './components/Footer'
-import NavBar from './components/Navbar'
+import NavBar from './components/NavBar'
 import './globals.css'
 import { Montserrat, Lobster } from 'next/font/google'
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' })
@@ -14,7 +14,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-
       <body className={`${montserrat.variable} ${lobster.variable} w-full min-h-screen z-10`}>
         <NavBar />
         {children}

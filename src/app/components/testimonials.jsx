@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Despoimentos({ text, foto, name, cidade }) {
+export default function Testimonials({ text, foto, name, cidade }) {
     return (
         <div className="w-72 line bg-light/40 backdrop-blur-md rounded flex flex-col justify-center items-center p-5 ">
             <Image src={foto} className="w-44 my-2 rounded-full" alt="Depoimento" />

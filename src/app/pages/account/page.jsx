@@ -1,5 +1,5 @@
 import Image from "next/image";
-import header from '../../../public/header_conta.jpg';
+import header from '/public/header_conta.jpg';
 
 export default function Produtos() {
     return (
