@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../../../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import Card from "../components/card.jsx";
+import Card from "./Card";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
   function DatabaseRead({ currentPage, itemsPerPage }) {

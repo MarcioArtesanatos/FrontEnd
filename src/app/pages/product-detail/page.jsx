@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import CarrosselCompra from '../../components/buy-carousel';
 import { useState } from 'react';
-import Card from '../../components/card';
+import Card from '../../components/Card';
 
 export default function Compra() {
 
