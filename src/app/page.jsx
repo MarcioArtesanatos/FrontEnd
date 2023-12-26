@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCreditCard, faShieldAlt, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import Blog from './components/Blog';
-import Testimonials from './components/Testimonials';
-import Product from "./components/Product";
+import Testimonials from './components/Depoimentos';
+import Product from "./components/Produtos";
 import Image from 'next/image';
 import danila from '../../public/danila.jpg';
 import leonardo from '../../public/leonardo.jpg';
