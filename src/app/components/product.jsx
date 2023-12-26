@@ -62,7 +62,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
     );
   };
 
-  export default function Produto() {
+  export default function Product() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 20;
     const [totalPages, setTotalPages] = useState(1);

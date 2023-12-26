@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCreditCard, faShieldAlt, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
+import Product from "./components/Product";
 import Image from 'next/image';
 import danila from '../../public/danila.jpg';
 import leonardo from '../../public/leonardo.jpg';
 import tiago from '../../public/tiago.jpg';
 import modelo from '../../public/modelo.jpg';
-import Produto from "./components/Product";
 
 const CardIdade = ({ idade, diaMes, link }) => {
   return (
@@ -75,7 +75,7 @@ export default function Home() {
               </h2>
               <h4 className="pb-5">Confira nossos produtos e divirta-se!</h4>
               <div className='py-5 flex flex-wrap justify-center'>
-                <Produto/>
+                <Product/>
               </div>
             </div>
             
