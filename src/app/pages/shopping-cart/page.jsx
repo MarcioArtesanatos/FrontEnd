@@ -1,10 +1,10 @@
 "use client"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
-import ItemCarrinho from "../../app/components/ItemCarrinho";
-import ItemCarrinhoMobile from "../../app/components/ItemCarrinhoMobile";
+// import ItemCarrinho from "../../app/components/ItemCarrinho";
+// import ItemCarrinhoMobile from "../../app/components/ItemCarrinhoMobile";
 import Image from 'next/image';
-import header from '../../../public/header_carrinho.jpg';
+// import header from '/public/header_carrinho.jpg';
 import Link from 'next/link';
 
 export default function Carrinho() {
