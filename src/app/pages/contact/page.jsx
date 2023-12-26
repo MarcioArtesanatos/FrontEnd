@@ -1,5 +1,5 @@
 import Image from "next/image";
-import header from '../../../public/header_contato.jpg';
+import header from '/public/header_contato.jpg';
 
 export default function FaleConosco() {
     return (

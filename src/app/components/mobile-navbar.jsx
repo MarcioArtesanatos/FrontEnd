@@ -60,7 +60,7 @@ export default function NavBarMobile() {
                     <p>Início</p>
                 </Link>
                 <Link
-                    href="??"
+                    href="/pages/my-account"
                     className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
@@ -68,7 +68,7 @@ export default function NavBarMobile() {
                     <p>Minha Conta</p>
                 </Link>
                 <Link
-                    href="/fale-conosco"
+                    href="/pages/contact"
                     className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
@@ -77,7 +77,7 @@ export default function NavBarMobile() {
                 </Link>
                 
                 <Link
-                    href="/carrinho"
+                    href="/pages/shopping-cart"
                     className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
@@ -88,7 +88,7 @@ export default function NavBarMobile() {
                     <p>Meu Carrinho</p>
                 </Link>
                 <Link
-                    href="quem-somos"
+                    href="/pages/about-us"
                     className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
@@ -96,7 +96,7 @@ export default function NavBarMobile() {
                     <p>Quem somos</p>
                 </Link>
                 <Link
-                    href="politica-de-privacidade"
+                    href="/pages/privacy-policy"
                     className=" text-yellow1  flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
@@ -104,7 +104,7 @@ export default function NavBarMobile() {
                     <p>Política de privacidade</p>
                 </Link>
                 <Link
-                    href="politica-de-troca-devolucao"
+                    href="/pages/exchange-return"
                     className=" text-yellow1  flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-light"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >

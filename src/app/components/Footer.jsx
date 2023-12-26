@@ -1,8 +1,5 @@
 import Image from "next/image"
 import logo from "../../../public/logo.png"
-import visa from "../../../public/visa.png"
-import master from "../../../public/master.png"
-import american from "../../../public/american.png"
 import rixxer from "../../../public/rixxer.png"
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,10 +26,10 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col space-y-5 md:text-center text-center items-center">
                     <h2 className="uppercase font-bold">Institucional</h2>
-                    <Link href="fale-conosco" className="hover:text-primaryDark transition-all duration-300">Fale Conosco</Link>
-                    <Link href="/politica-de-privacidade" className="hover:text-primaryDark transition-all duration-300">Política de Privacidade</Link>
-                    <Link href="politica-de-troca-e-devolucao" className="hover:text-primaryDark transition-all duration-300">Política de Troca e Devolução</Link>
-                    <Link href="quem-somos"className="hover:text-primaryDark transition-all duration-300">Quem Somos</Link>
+                    <Link href="/pages/contact" className="hover:text-primaryDark transition-all duration-300">Fale Conosco</Link>
+                    <Link href="/pages/privacy-policy" className="hover:text-primaryDark transition-all duration-300">Política de Privacidade</Link>
+                    <Link href="/pages/exchange-return" className="hover:text-primaryDark transition-all duration-300">Política de Troca e Devolução</Link>
+                    <Link href="/pages/about-us"className="hover:text-primaryDark transition-all duration-300">Quem Somos</Link>
                 </div>
 
                 <div className="flex flex-col justify-start md:items-center items-center space-y-5">
@@ -44,15 +41,6 @@ export default function Footer() {
                     <Link href="https://wa.me/5535998647172" target="_blank" className="flex items-center hover:text-primaryDark transition-all duration-300 mt-5">
                         <FontAwesomeIcon icon={faWhatsapp} className="text-2xl h-4 mr-2 " />(35) 99864-7172
                     </Link>
-                    {/* <div className="flex">
-                        <Image src={visa} alt="imagem da bandeira visa"
-                            className="h-16 w-16" />
-                        <Image src={master} alt="imagem da bandeira visa"
-                            className="h-14 w-16" />
-                        <Image src={american} alt="imagem da bandeira visa"
-                            className="h-16 w-16" />
-                        
-                    </div> */}
                 </div>
 
                 <div className="flex flex-col justify-center items-center gap-5">

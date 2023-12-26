@@ -2,14 +2,14 @@ import bgCrianca from "../../public/bgCrianca.jpg"
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCreditCard, faShieldAlt, faTruckFast } from '@fortawesome/free-solid-svg-icons';
-import Blog from './components/Blog';
-import Despoimentos from './components/Depoimentos';
+import Blog from './components/blog';
+import Testimonials from './components/testimonials';
 import Image from 'next/image';
 import danila from '../../public/danila.jpg';
 import leonardo from '../../public/leonardo.jpg';
 import tiago from '../../public/tiago.jpg';
 import modelo from '../../public/modelo.jpg';
-import Produto from "./components/Produto";
+import Produto from "./components/product";
 
 const CardIdade = ({ idade, diaMes, link }) => {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <main className='bg-light w-full pt-10'>
-        <div className='flex md:flex-col justify-center items-center gap-5 '>
+        <div className='flex md:flex-col justify-center items-center gap-5'>
           {/* ... */}
 
           <div className=' mb-16 flex justify-center items-center border border-solid rounded-lg border-primaryDark px-10 py-5'>
@@ -58,7 +58,7 @@ export default function Home() {
         <div className='px-16 md:px-5 w-full h-auto flex text-center'>
 
           <div className=' w-full rounded-xl flex justify-center items-center flex-col'>
-            <h2 className='text-black/75 font-bold py-10 text-4xl '>
+            {/* <h2 className='text-black/75 font-bold py-10 text-4xl '>
               Compre por Categoria
             </h2>
             <div className='flex md:flex-col gap-5'>
@@ -67,12 +67,13 @@ export default function Home() {
               <CardIdade idade="5 - 7" diaMes="Anos" link="/por-idade" />
               <CardIdade idade="7 - 9" diaMes="Anos" link="/por-idade" />
               <CardIdade idade="9 - 12" diaMes="Anos" link="/por-idade" />
-            </div>
+            </div> */}
 
-            <div className='bg-gradient-to-r w-screen mt-10 mb-10'>
-              <h2 className='uppercase mt-24 text-black/75 font-bold pb-10 text-4xl '>
+            <div className='bg-gradient-to-r w-screen mb-10'>
+              <h2 className='uppercase text-black/75 font-bold text-4xl '>
                 Produtos
               </h2>
+              <h4 className="pb-5">Confira nossos produtos e divirta-se!</h4>
               <div className='py-5 flex flex-wrap justify-center'>
                 <Produto/>
               </div>
@@ -86,19 +87,19 @@ export default function Home() {
         <h2 className='text-4xl text-white font-bold'>Depoimentos</h2>
         <p className="text-2xl pb-10 font-bold text-yellow-400">Veja o que nossos clientes estão falando...</p>
         <div className='flex gap-5 flex-wrap justify-center'>
-          <Despoimentos
+          <Testimonials
             foto={danila}
             text="Brinquedos sensacionais e com preços super acessíveis. Vou comprar sempre!"
             name="Danila Ionan"
             cidade="São Lourenço"
           />
-          <Despoimentos
+          <Testimonials
             foto={leonardo}
             text="Minha filha adora os brinquedos do Márcio. Compro sempre. Recomendo."
             name="Leonardo Ortiz"
             cidade="São Lourenço"
           />
-          <Despoimentos
+          <Testimonials
             foto={tiago}
             text="Grande variedade e preços excelentes. Entrega super rápida. Atendimento nota 1000."
             name="Tiago Ribeiro"

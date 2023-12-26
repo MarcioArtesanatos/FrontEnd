@@ -1,12 +1,10 @@
 "use client"
-
+import elicoptero from "/public/danila.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import CarrosselCompra from '../components/CarrosselCompra';
+import CarrosselCompra from '../../components/buy-carousel';
 import { useState } from 'react';
-import Card from '../components/Card';
-
-
+import Card from '../../components/card';
 
 export default function Compra() {
 
@@ -16,7 +14,7 @@ export default function Compra() {
     <div className="p-16 bg-light">
       <div className="flex justify-center rounded-lg p-10 ">
         <div className="flex items-center justify-center  h-full">
-          {/* <CarrosselCompra primeira={image} segunda={image} terceira={image} title="foto de um foguete" /> */}
+          <CarrosselCompra primeira={elicoptero} segunda={elicoptero} terceira={elicoptero} title="foto de um foguete" />
         </div>
         <div className=" w-[40%] text-black/75">
           <h2 className="text-5xl pb-2 border-b-2 border-black/75 font-bold">Foguete</h2>
@@ -57,19 +55,13 @@ export default function Compra() {
         <h2 className='text-blue-500 font-bold text-xl py-5'>Descrição Completa</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, sit. Eligendi, obcaecati similique. Pariatur rem dolore ut eius, suscipit nam laboriosam, consequatur, nostrum earum obcaecati quas nemo odit sapiente cumque.
         </p><br />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, sit. Eligendi, obcaecati similique. Pariatur rem dolore ut eius, suscipit nam laboriosam, consequatur, nostrum earum obcaecati quas nemo odit sapiente cumque.
-        </p><br />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, sit. Eligendi, obcaecati similique. Pariatur rem dolore ut eius, suscipit nam laboriosam, consequatur, nostrum earum obcaecati quas nemo odit sapiente cumque.
-        </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, sit. Eligendi, obcaecati similique. Pariatur rem dolore ut eius, suscipit nam laboriosam, consequatur, nostrum earum obcaecati quas nemo odit sapiente cumque.
-        </p><br />
       </div>
       <div className='p-10'>
         <h2 className='text-blue-500 font-bold text-xl py-5'>Produtos Relacionados</h2>
         <div className='flex items-center justify-center gap-10'>
-          {/* <Card title="Caminhão" preço=" R$ 10,00" link={elicoptero} href="compra" />
           <Card title="Caminhão" preço=" R$ 10,00" link={elicoptero} href="compra" />
-          <Card title="Caminhão" preço=" R$ 10,00" link={elicoptero} href="compra" /> */}
+          <Card title="Caminhão" preço=" R$ 10,00" link={elicoptero} href="compra" />
+          <Card title="Caminhão" preço=" R$ 10,00" link={elicoptero} href="compra" />
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
-
-import Footer from './components/Footer'
-import NavBar from './components/NavBar'
+import Footer from './components/footer'
+import NavBar from './components/navbar'
 import './globals.css'
 import { Montserrat, Lobster } from 'next/font/google'
 

@@ -6,7 +6,7 @@ import logo from "../../../public/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import NavBarMobile from "./NavBarMobile";
+import NavBarMobile from "./mobile-navbar";
 import { faSearch, faShoppingCart, faUser, faUserAlt, faUserAstronaut, faUserCircle, faUserCog } from "@fortawesome/free-solid-svg-icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -73,9 +73,9 @@ export default function NavBar() {
       </div>
       <nav className="w-screen md:hidden flex justify-center gap-10 items-center pb-5 bg-light">
         <CustomLink href="/" title="Início" />
-        <CustomLink href="/quem-somos" title="Quem Somos" />
-        <CustomLink href="/produtos" title="Produtos" />
-        <CustomLink href="/fale-conosco" title="Contato" />
+        <CustomLink href="/pages/about-us" title="Quem Somos" />
+        <CustomLink href="/pages/products" title="Produtos" />
+        <CustomLink href="/pages/contact" title="Contato" />
       </nav>
     </div>
   )

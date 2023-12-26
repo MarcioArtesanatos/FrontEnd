@@ -1,5 +1,5 @@
 import Image from "next/image";
-import header from '../../../public/header_politica.jpg';
+import header from '/public/header_politica.jpg';
 
 export default function PoliticaDePrivacidade() {
     return (

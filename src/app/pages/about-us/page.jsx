@@ -1,6 +1,6 @@
 import Image from "next/image";
-import sobre from '../../../public/sobre.jpg';
-import header from '../../../public/header_quemsomos.jpg';
+import sobre from '/public/sobre.jpg';
+import header from '/public/header_quemsomos.jpg';
 
 export default function QuemSomos() {
     return (

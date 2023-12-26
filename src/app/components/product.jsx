@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import { db } from "../../../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import Card from "./Card";
+import Card from "./card";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
   function DatabaseRead({ currentPage, itemsPerPage }) {
     const [produto, setProduto] = useState([]);
@@ -28,7 +29,7 @@ import Card from "./Card";
     }, [currentPage, endIndex, startIndex]);
 
     return (
-      <div className="flex flex-wrap gap-5 px-16 items-center justify-center">
+      <div className="flex flex-wrap gap-2 px-16 items-center justify-center">
         { produto.map((item) => {
           if (Array.isArray(item.imagens) && item.imagens.length > 0) {
             const primeiroLink = item.imagens[0];
@@ -36,10 +37,11 @@ import Card from "./Card";
               <Card
                 key={item.id}
                 title={item.produto}
+                shortdescription={item.shortdescription}
                 ratings={item.avaliacao}
                 preco={item.valor}
                 link={primeiroLink}
-                href="/compra"
+                href="/productDetails"
               />
             );
           }
@@ -51,7 +53,7 @@ import Card from "./Card";
   const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
     const pages = [...Array(totalPages).keys()].map((page) => page + 1);
     return (
-      <div className="pagination space-x-5 ">
+      <div className="pagination space-x-5">
         { pages.map((page) => (
           <button key={page} onClick={() => setCurrentPage(page)} className={`px-4 py-2 rounded-full mr-2 ${ currentPage === page ? "bg-blue-500 text-white" : "bg-white text-blue-500 hover:bg-blue-200"}`}>{page}
           </button>
@@ -62,7 +64,7 @@ import Card from "./Card";
 
   export default function Produto() {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
+    const itemsPerPage = 20;
     const [totalPages, setTotalPages] = useState(1);
 
     useEffect(() => {
