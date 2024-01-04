@@ -16,7 +16,9 @@ import Rating from "./Rating"; // Import your Rating component
     };
    
     return (
-      <div className={`group bg-blue-100 mr-5 mb-5 md:mr-0 flex flex-col p-5 rounded-xl relative flex justify-center items-center ${className}`}>
+      <div className={`group bg-blue-100 mr-5 mb-5 md:mr-0 flex flex-col p-5 rounded-xl relative justify-center items-center ${className}`}>
+        
+        
         <div className="relative w-40 md:w-64 flex items-center justify-center">
           <Image src={link} alt={title} height={220} width={220} className="rounded-xl" />
           <span className="flex justify-center items-center bg-gradient-to-r from-cyan-500/75 to-blue-500/75 backdrop-blur-md absolute w-full top-0 left-0 rounded-xl h-0 group-hover:h-full transition-[height] ease duration-300">
@@ -30,10 +32,10 @@ import Rating from "./Rating"; // Import your Rating component
         </div>
         
         <div className="flex flex-col justify-center items-center">
-          <h2 className="font-bold text-zinc-800 text-xl mt-5 mb-2">
+          <h2 className="font-bold text-zinc-800 text-xl mt-5 mb-2 break-text">
             {title}
           </h2>
-          <h4>
+          <h4 className="break-text">
             {shortdescription}
           </h4>
           <Rating rating={ratings} />

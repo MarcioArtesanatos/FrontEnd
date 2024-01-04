@@ -17,7 +17,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
             const dataCollection = collection(db, "produtos");
             const dataSnapshot = await getDocs(dataCollection);
             const dataList = dataSnapshot.docs.map((doc) => doc.data());
-            setProduto(dataList.slice(startIndex, endIndex));
+
+            // Ordenar a lista em ordem crescente com base no campo "produto"
+            const sortedDataList = dataList.sort((a, b) => {
+              // Campo "produto" como uma String
+              return a.produto.localeCompare(b.produto);
+            });
+
+            setProduto(sortedDataList.slice(startIndex, endIndex));
           }
           getProduto();
         } catch (error) {

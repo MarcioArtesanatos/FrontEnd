@@ -25,3 +25,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #C2DFF4;
 }
+
+.break-text {
+  overflow-wrap: break-word; /* ou word-wrap: break-word; */
+  white-space: pre-line;
+  max-width: 200px; /* ajuste o valor conforme necessário */
+}
