@@ -18,11 +18,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
             const dataSnapshot = await getDocs(dataCollection);
             const dataList = dataSnapshot.docs.map((doc) => doc.data());
 
+            // Filter the productList to include only items where stock is true
+          const filteredProductList = dataList.filter(item => item.stock === true);
+
             // Ordenar a lista em ordem crescente com base no campo "produto"
-            const sortedDataList = dataList.sort((a, b) => {
-              // Campo "produto" como uma String
-              return a.produto.localeCompare(b.produto);
-            });
+          const sortedDataList = filteredProductList.sort((a, b) => {
+            // Campo "produto" como uma String
+            return a.produto.localeCompare(b.produto);
+          });
 
             setProduto(sortedDataList.slice(startIndex, endIndex));
           }
